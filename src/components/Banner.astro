@@ -1,15 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import bannerImage from "../images/banner.png";
 ---
 
 <section
   class="animate-zoom-in animate-delay-40000 animate-duration-slower flex justify-center items-center py-10"
 >
-  <Image
-    src={bannerImage}
+  <img
+    src="/banner.png"
     alt="Star Wars Day"
     class="md:w-2/4 sm:w-1/2"
-    loading="lazy"
+    loading="eager"
   />
 </section>

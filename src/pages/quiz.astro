@@ -21,7 +21,12 @@ options = options.sort(() => Math.random() - 0.5);
 <Layout>
   <div class="container mx-auto px-4 py-10">
     <div class="text-center mb-10">
-      <img src={imageUrl} alt="Personaje" class="mx-auto h-64 w-auto" />
+      <img
+        src={imageUrl}
+        alt="Personaje"
+        class="mx-auto h-64 w-auto"
+        loading="eager"
+      />
     </div>
     <h1 class="text-center text-6xl text-yellow-300 font-atomic font-extrabold">
       ¿Quién es?
