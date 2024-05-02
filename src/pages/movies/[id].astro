@@ -1,0 +1,120 @@
+---
+import { movies } from "../../bd/movies";
+import Disney from "../../icons/disney.astro";
+import Youtube from "../../icons/youtube.astro";
+import Layout from "../../layouts/layout.astro";
+
+export function getStaticPaths() {
+  return movies.map(({ id }) => {
+    return { params: { id } };
+  });
+}
+const { id } = Astro.params;
+const movie = movies.find((movie) => movie.id == id);
+if (!movie) {
+  return Astro.redirect("/");
+}
+---
+
+<Layout>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-10 mr-10 mb-10">
+    <div class="ml-auto">
+      <img
+        src={`/movies/movie_${movie.id}.webp`}
+        class="w-[444px] mx-auto my-auto"
+        alt={movie.title}
+      />
+    </div>
+    <div class="pl-10 text-[#b5b7b7] font-bold">
+      <h1 class="font-extrabold text-2xl text-white">{movie.longTitle}</h1>
+      <div class="mt-3">
+        <div>
+          Clasificación: <span class="font-light">{movie.rating}</span>
+        </div>
+        <div>
+          Duración: <span class="font-light">{movie.runtime}</span>
+        </div>
+        <div>
+          Fecha de lanzamiento: <span class="font-light"
+            >{movie.releaseDate}</span
+          >
+        </div>
+        <div>
+          Género: <span class="font-light">{movie.genres.join(", ")}</span>
+        </div>
+      </div>
+      <p class="my-3 md:pr-4 lg:pr-40">{movie.description}</p>
+      <div>
+        <h2 class="font-bold text-lg text-white">Dirigida por</h2>
+        <p>{movie.directedBy}</p>
+      </div>
+      <div class="my-3">
+        <h2 class="font-bold text-lg text-white">Escrita por</h2>
+        <p>{movie.writtenBy.join(", ")}</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg text-white">Donde verla</h3>
+        <div class="mt-1 flex gap-2">
+          <a
+            href="https://www.disneyplus.com"
+            target="_blank"
+            aria-label="Icono Disney"
+          >
+            <Disney />
+          </a>
+          <span id="youtube" class="cursor-pointer">
+            <Youtube stroke="red" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    id="modal"
+    class="bg-black bg-opacity-85 fixed inset-0 hidden items-center justify-center z-50"
+  >
+    <div class="p-6 rounded-lg shadow-lg w-full max-w-screen-md">
+      <button id="closeModal" class="absolute top-0 right-0 mt-4 mr-4 text-5xl"
+        >X</button
+      >
+      <iframe
+        class="w-full h-96 object-cover"
+        src="https://www.youtube.com/embed/beAH5vea99k?si=LHfLoyDTy_ulfk3S&enablejsapi=1"
+        title={movie.longTitle}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  body.modal-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+  }
+</style>
+
+<script>
+  const modal = document.getElementById("modal");
+  const iframe = document.querySelector("iframe");
+
+  document.getElementById("youtube")?.addEventListener("click", function () {
+    modal?.classList.remove("hidden");
+    modal?.classList.add("flex");
+  });
+
+  document.getElementById("closeModal")?.addEventListener("click", function () {
+    iframe?.contentWindow?.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+    modal?.classList.add("hidden");
+  });
+</script>

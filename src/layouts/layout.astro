@@ -1,0 +1,21 @@
+---
+import Banner from "../components/Banner.astro";
+import Menu from "../components/Menu.astro";
+import Footer from "../sections/Footer.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>May the 4th - cristotodev</title>
+  </head>
+  <body class="bg-[url('/fondo.jpg')] text-white">
+    <Menu />
+    <Banner />
+    <slot />
+    <Footer />
+  </body>
+</html>
