@@ -93,8 +93,7 @@ export const characters: Character[] = [
   },
   {
     name: "Wedge Antilles",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/60/WedgeHelmetless-ROTJHD.jpg",
+    imageUrl: "/characters/Wedge Antilles.webp",
     species: "human",
   },
   {
@@ -141,8 +140,7 @@ export const characters: Character[] = [
   },
   {
     name: "Lobot",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/9/96/SWE_Lobot.jpg",
+    imageUrl: "/characters/Lobot.webp",
     species: "human",
   },
   {
@@ -153,8 +151,7 @@ export const characters: Character[] = [
   },
   {
     name: "Mon Mothma",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png",
+    imageUrl: "/characters/Monmothma.webp",
     species: "human",
   },
   {
@@ -171,8 +168,7 @@ export const characters: Character[] = [
   },
   {
     name: "Nien Nunb",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/1/14/Old_nien_nunb_-_profile.png",
+    imageUrl: "/characters/Nien Nunb.webp",
     species: "sullustan",
   },
   {
@@ -207,14 +203,12 @@ export const characters: Character[] = [
   },
   {
     name: "Roos Tarpals",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/c/ca/TarpalsHS.jpg",
+    imageUrl: "/characters/Roos Tarpals",
     species: "gungan",
   },
   {
     name: "Rugor Nass",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/d/d8/Bossnass.jpg",
+    imageUrl: "/characters/Rugor Nass.webp",
     species: "gungan",
   },
   {
@@ -243,8 +237,7 @@ export const characters: Character[] = [
   },
   {
     name: "Shmi Skywalker",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/a/ad/ShmiSkywalkerDatabank_%28Repurposed%29.jpeg",
+    imageUrl: "/characters/Shmi Skywalker.webp",
     species: "human",
   },
   {
@@ -267,8 +260,7 @@ export const characters: Character[] = [
   },
   {
     name: "Ratts Tyerell",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/68/RattsHS.jpg",
+    imageUrl: "/characters/Ratts Tyerell.webp",
     species: "aleena",
   },
   {
@@ -279,20 +271,17 @@ export const characters: Character[] = [
   },
   {
     name: "Gasgano",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/5/57/GasganoHS-SWE.jpg",
+    imageUrl: "/characters/Dexter Jettster.webp",
     species: "xexto",
   },
   {
     name: "Ben Quadinaros",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/7/7f/Cropped_Quadinaros.png",
+    imageUrl: "/characters/Ben Quadinaros.webp",
     species: "toong",
   },
   {
     name: "Mace Windu",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/5/58/Mace_ROTS.png",
+    imageUrl: "/characters/Mace Windu.webp",
     species: "human",
   },
   {
@@ -321,14 +310,12 @@ export const characters: Character[] = [
   },
   {
     name: "Saesee Tiin",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/68/Saesee_Tiin_Card_Trader.jpg",
+    imageUrl: "/characters/Saesee Tiin.webp",
     species: "iktotchi",
   },
   {
     name: "Yarael Poof",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/66/Yarael_Poof_Canon.jpeg",
+    imageUrl: "/characters/Yarael Poof.webp",
     species: "quermian",
   },
   {
@@ -351,8 +338,7 @@ export const characters: Character[] = [
   },
   {
     name: "Cordé",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png",
+    imageUrl: "/characters/corde.webp",
     species: "human",
   },
   {
@@ -369,8 +355,7 @@ export const characters: Character[] = [
   },
   {
     name: "Luminara Unduli",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/2/21/LuminaraHS-SWE_%28new%29.png",
+    imageUrl: "/characters/Luminara Unduli.webp",
     species: "mirialan",
   },
   {
@@ -381,8 +366,7 @@ export const characters: Character[] = [
   },
   {
     name: "Dormé",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/1/18/Dormesenate.jpg",
+    imageUrl: "/characters/Dorme.webp",
     species: "human",
   },
   {
@@ -411,8 +395,7 @@ export const characters: Character[] = [
   },
   {
     name: "Dexter Jettster",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/6c/DexterHS-SWE.jpg",
+    imageUrl: "/characters/Dexter Jettster.webp",
     species: "besalisk",
   },
   {
@@ -447,8 +430,7 @@ export const characters: Character[] = [
   },
   {
     name: "San Hill",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/6/6f/SanHill_hs.jpg",
+    imageUrl: "/characters/San Hill.webp",
     species: "muun",
   },
   {
@@ -460,7 +442,7 @@ export const characters: Character[] = [
   {
     name: "Grievous",
     imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/d/de/Grievoushead.jpg",
+      "https://media.contentapi.ea.com/content/dam/star-wars-battlefront-2/images/2019/08/swbf2-refresh-hero-large-heroes-page-grievous-16x9-xl.jpg.adapt.crop1x1.320w.jpg",
     species: "kaleesh",
   },
   {
@@ -477,8 +459,7 @@ export const characters: Character[] = [
   },
   {
     name: "Sly Moore",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/e/ec/SlyMooreIsWatchingYouPoop-OfficialPix.jpg",
+    imageUrl: "/characters/Sly Moore.webp",
     species: "umbaran",
   },
   {
@@ -489,8 +470,7 @@ export const characters: Character[] = [
   },
   {
     name: "Finn",
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/starwars/images/a/af/Finn_TLJ_Collector%27s_Edition.png",
+    imageUrl: "/characters/Finn.webp",
     species: "human",
   },
   {

@@ -1,4 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
 import animations from "@midudev/tailwind-animations";
 
 /** @type {import('tailwindcss').Config} */
@@ -7,7 +6,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      starwars: ["Star Wars", ...defaultTheme.fontFamily.sans],
+      atomic: ["Atomic", "cursive"],
     },
   },
   plugins: [animations],
