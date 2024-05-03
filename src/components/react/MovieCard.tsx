@@ -16,7 +16,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({
       <CardBody className="sm:w-[30rem] md:w-[20rem] bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-200 dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-neutral-900"
         >
           {title}
         </CardItem>
@@ -31,7 +31,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({
           <CardItem
             translateZ={20}
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal text-black bg-gray-200"
+            className="px-4 py-2 rounded-xl text-xs font-normal text-black bg-gray-200 dark:bg-black dark:text-white"
           >
             {realeaseDate}
           </CardItem>
